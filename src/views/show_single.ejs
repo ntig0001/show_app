@@ -1,0 +1,26 @@
+<%- include('./partials/header.ejs') %>
+  <div id="middle" class="container">
+    <% if(show != null) { %>
+      <div class="col-lg-3 margin-single text-center">
+        <div class="item border-bottom">
+          <h1 class="header img"><%- show.name %></h1>
+          <a href="<%- show.officialSite %>">
+            <img class="rounded img" src="<%- show.image.medium %>" alt="<% show.name %>">
+          </a>
+          <br>
+          <h4 class="img"><%- show.language %></h4>
+          <br>
+          <h4 class="img">Premiered: <%- show.premiered %></h4>
+          <br>
+          <h6 class="img"><%- show.summary %></h6>
+        </div>
+        <% if(show.officialSite == null) { %>
+          <br>
+          <h4 class="img text-info">The Official Website Is Currently Not Available...</h4>
+        <% } %>
+      </div>
+    <% } else { %>
+      <%- include('./partials/error_message.ejs') %>
+    <% } %>     
+  </div>
+<%- include('./partials/footer.ejs') %>

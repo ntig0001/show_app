@@ -1,0 +1,22 @@
+<%- include('./partials/header.ejs') %>
+<div class="container">
+  <div class="row">
+    <% if(shows != null ) { %> 
+        <% for (let show of shows){ %>
+        <% if (show.image == null) continue; %>
+          <div class="col-lg-3 margin-buffer">
+            <div class="item text-center border-bottom">
+              <a href="/show/<%- show.id %>">
+                <img class="rounded img" src="<%- show.image.medium %>" alt="<% show.name %>">
+              </a>
+              <p class="img"><%- show.language %></p>
+            </div>
+          </div>
+        <% } %>  
+    <% } else { %>
+      <%- include('./partials/error_message.ejs') %>
+    <% } %>
+  </div>
+</div>
+<%- include('./partials/footer.ejs') %>
+      
