@@ -1,13 +1,13 @@
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: blue;
 }
 
 h2 { font-size: 1.6rem; }
 
 .bg-search{
-  background-image: url("https://images.unsplash.com/photo-1472220625704-91e1462799b2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+  background: url("../img/unsplash_girl_laptop.jpg");
   background-position: 0px auto;
   background-size:cover;
   height: 500px;
@@ -15,10 +15,13 @@ h2 { font-size: 1.6rem; }
 }
 
 #body{
-  background-image: url("https://images.unsplash.com/photo-1529798856831-427dfd0a1ab1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=634&q=80");
+  background: url("../img/unsplash_film.jpg");
   background-position: 0px auto;
   background-size:cover;
   background-attachment: fixed;
+  color:rgb(253, 240, 208);
+  text-shadow: 2px 2px 8px black;
+  text-align: center;
 }
 
 #middle{
@@ -48,7 +51,7 @@ h2 { font-size: 1.6rem; }
 .margin-single{
   margin: 47px;
   width: 500px;
-  text-align:end;
+  text-align: center;
   
 }
 

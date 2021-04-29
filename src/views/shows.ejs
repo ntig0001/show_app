@@ -4,7 +4,7 @@
     <% if(shows != null ) { %> 
         <% for (let show of shows){ %>
         <% if (show.image == null) continue; %>
-          <div class="col-lg-3 margin-buffer">
+          <div class="col-md-3 margin-buffer">
             <div class="item text-center border-bottom">
               <a href="/show/<%- show.id %>">
                 <img class="rounded img" src="<%- show.image.medium %>" alt="<% show.name %>">

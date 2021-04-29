@@ -19,4 +19,4 @@ app.use('/', show_routes)
 app.use('/show', show_routes)
 
 /** app is listening on specified port */
-app.listen(process.env.PORT || 4040, () => console.log("Server up and runnig"))
+app.listen(process.env.PORT || 4040, () => console.log("Server up and running"))
