@@ -1,16 +1,14 @@
 <%- include('./partials/header.ejs') %>
 <div class="container">
-  <div class="row">
+  <div id="middle" class="margin-buffer">
     <% if(shows != null ) { %> 
         <% for (let show of shows){ %>
         <% if (show.image == null) continue; %>
-          <div class="col-md-3 margin-buffer">
-            <div id="middle" class="item border-bottom">
-              <a href="/show/<%- show.id %>">
-                <img class="rounded img" src="<%- show.image.medium %>" alt="<% show.name %>">
-              </a>
-              <p class="img"><%- show.language %></p>
-            </div>
+          <div class="border-bottom">
+            <a href="/show/<%- show.id %>">
+              <img class="rounded img" src="<%- show.image.medium %>" alt="<% show.name %>">
+            </a>
+            <p class="img"><%- show.language %></p>
           </div>
         <% } %>  
     <% } else { %>

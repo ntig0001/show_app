@@ -1,8 +1,8 @@
 <%- include('./partials/header.ejs') %>
-  <div class="container">
+  <div id="middle" class="container">
     <% if(show != null) { %>
-      <div id="middle" class="margin-single text-center">
-        <div class="item border-bottom">
+      <div id="middle" class="text-center">
+        <div class="item margin-single border-bottom">
           <h1 class="header img"><%- show.name %></h1>
           <a href="<%- show.officialSite %>">
             <img class="rounded img" src="<%- show.image.medium %>" alt="<% show.name %>">
